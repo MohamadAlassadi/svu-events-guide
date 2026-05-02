@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا | دليل الجامعة</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Cairo',sans-serif;background:#f0f4f8;direction:rtl;}
+        .navbar-custom{background:linear-gradient(135deg,#0f2b3d,#1b4a6e);}
+        .contact-card{background:white;border-radius:1.5rem;padding:2rem;box-shadow:0 10px 25px rgba(0,0,0,0.05);}
+        footer{background:#0f2b3d;color:#e2e8f0;margin-top:3rem;padding:1.5rem 0;text-align:center;}
+        .social-icons a{font-size:1.8rem;margin:0 0.5rem;color:#1b4a6e;}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-calendar-alt"></i> دليل الفعاليات</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="nav">
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="events.html">الفعاليات</a></li>
+
+
+                    <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="contact-card">
+                    <h3><i class="fas fa-envelope"></i> راسلنا</h3>
+                    <div id="alertMsg"></div>
+                    <form id="contactForm">
+                        <div class="mb-3"><label>الاسم الكامل</label><input type="text" id="name" class="form-control" required></div>
+                        <div class="mb-3"><label>البريد الإلكتروني</label><input type="email" id="email" class="form-control" required></div>
+                        <div class="mb-3"><label>الرسالة</label><textarea id="msg" rows="4" class="form-control" required></textarea></div>
+                        <button type="submit" class="btn btn-primary px-4 rounded-pill">إرسال <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-card">
+                    <h4>معلومات التواصل</h4>
+                    <p><i class="fas fa-envelope"></i> support@svu-events.com</p>
+                    <p><i class="fas fa-phone"></i> +963 000000000</p>
+                    <h5>تابعنا</h5>
+                    <div class="social-icons"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+ <footer style="background: linear-gradient(135deg, #0f2b3d, #1b4a6e); color: #e2e8f0; margin-top: 3rem; padding: 2rem 0 1.5rem 0; text-align: center;">
+    <div class="container">
+        <div style="margin-bottom: 1.5rem;">
+            <h5 style="font-weight: 700; margin-bottom: 1rem; color: #fff;">تابعنا على</h5>
+            <div style="display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap;">
+                <a href="https://www.facebook.com/svuonline" target="_blank" style="background: #1877f2; color: white; width: 45px; height: 45px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 1.5rem; transition: 0.3s; text-decoration: none;">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/svuonline" target="_blank" style="background: #1da1f2; color: white; width: 45px; height: 45px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 1.5rem; transition: 0.3s; text-decoration: none;">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/svuonline" target="_blank" style="background: #e4405f; color: white; width: 45px; height: 45px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 1.5rem; transition: 0.3s; text-decoration: none;">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/school/svuonline" target="_blank" style="background: #0077b5; color: white; width: 45px; height: 45px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 1.5rem; transition: 0.3s; text-decoration: none;">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.youtube.com/svuonline" target="_blank" style="background: #ff0000; color: white; width: 45px; height: 45px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 1.5rem; transition: 0.3s; text-decoration: none;">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 1rem;">
+            <a href="https://www.svuonline.org" target="_blank" style="color: #e2e8f0; text-decoration: none; font-weight: 600; transition: 0.3s; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <i class="fas fa-globe"></i> www.svuonline.org
+            </a>
+        </div>
+
+        <div style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem; margin-top: 0.5rem; font-size: 0.85rem;">
+            <p>&copy; 2026 دليل فعاليات الجامعة الافتراضية السورية | جميع الحقوق محفوظة</p>
+            <p style="font-size: 0.75rem; opacity: 0.7;">مشروع BWP401 - جامعة SVU الافتراضية</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();const name=document.getElementById('name').value.trim(),email=document.getElementById('email').value.trim(),msg=document.getElementById('msg').value.trim(),alertDiv=document.getElementById('alertMsg');if(!name||!email||!msg)alertDiv.innerHTML='<div class="alert alert-danger">جميع الحقول مطلوبة</div>';else if(!email.includes('@'))alertDiv.innerHTML='<div class="alert alert-danger">بريد غير صحيح</div>';else{alertDiv.innerHTML='<div class="alert alert-success">تم الإرسال بنجاح</div>';this.reset();}setTimeout(()=>alertDiv.innerHTML='',3000);});
+    </script>
+</body>
+</html>
